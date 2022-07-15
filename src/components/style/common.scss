@@ -1,4 +1,5 @@
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import './vars.scss';
 //RESET
 * {
     margin: 0;
@@ -9,4 +10,30 @@
 //COMMON
 .flex {
     display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    border-radius: 10px;
+    padding-block: 15px;
+    padding-inline: 35px;
+    margin-left: 20px;
+}
+
+.light-orange {
+    background-color: $brand_secondary_color;
+    color: $brand_primary_color;
+}
+
+.orange {
+    color: $brand_primary_color;
 }

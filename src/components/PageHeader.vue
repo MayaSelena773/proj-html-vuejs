@@ -1,7 +1,7 @@
 <template>
 <!--HEADER con: logo, nav link, numero e button-->
     <header>
-        <div class="flex">
+        <div class="flex-center">
             <img class="logo" src="../assets/img/mc-favicon.png" alt="logo">
             <p>AvadaConsultant</p>
         </div>
@@ -9,27 +9,30 @@
         <div>
             <ul class="flex">
                 <li>
-                    <a href="#">link</a>
+                    <a href="#" class="orange">Home <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
                 <li>
-                    <a href="#">Link</a>
+                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
                 </li>
                 <li>
-                    <a href="#">link</a>
+                    <a href="#">Why Us</a>
                 </li>
                 <li>
-                    <a href="#">link</a>
+                    <a href="#">Case Studies</a>
                 </li>
                 <li>
-                    <a href="#">link</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">link</a>
+                    <a href="#">Blog</a>
                 </li>
             </ul>
         </div>
 
-        <div class="flex">numero tel e button</div>
+        <div class="flex-center">
+            <span><i class="fa-solid fa-phone orange"></i>(555) 802 1234</span>
+            <span class="button light-orange">Free Quote</span>
+        </div>
     </header>
 </template>
 
@@ -40,10 +43,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './style/vars.scss';
 
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100px;
     background-color: lightblue;
 
@@ -65,6 +70,10 @@ header {
 
     p {
         font-weight: bold;
+    }
+
+    i {
+        padding-right: 10px;
     }
 }
 
