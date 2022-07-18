@@ -2,29 +2,14 @@
 <!--HEADER con: logo, nav link, numero e button-->
     <header>
         <div class="flex-center">
-            <img class="logo" src="../assets/img/mc-favicon.png" alt="logo">
-            <p>AvadaConsultant</p>
+            <img class="logo" src="../assets/img/avada-marketing-logo-2x-200x37.png" alt="logo">
         </div>
 
         <div>
             <ul class="flex">
-                <li>
-                    <a href="#" class="orange">Home <i class="fa-solid fa-chevron-down"></i></a>
-                </li>
-                <li>
-                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
-                </li>
-                <li>
-                    <a href="#">Why Us</a>
-                </li>
-                <li>
-                    <a href="#">Case Studies</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
+                <li v-for="(navItem, index) in navItems" :key="index">
+                    <a :href="navItem.link" class="orange">{{navItem.name}}</a>
+                    <i class="fa-solid fa-chevron-down little-icon"></i>
                 </li>
             </ul>
         </div>
@@ -38,7 +23,37 @@
 
 <script>
 export default {
-    name:'PageHeader'
+    name:'PageHeader',
+    data(){
+        return {
+            navItems: [
+                {
+                    name:"Home",
+                    link:"#",
+                },
+                {
+                    name:"Services",
+                    link:"#",
+                },
+                {
+                    name:"Why Us",
+                    link:"#",
+                },
+                {
+                    name:"Case Studies",
+                    link:"#",
+                },
+                {
+                    name:"About",
+                    link:"#",
+                },
+                {
+                    name:"Blog",
+                    link:"#",
+                }
+            ],
+        }
+    }
 }
 </script>
 
@@ -50,7 +65,6 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: lightblue;
 
     div {
         padding: 20px;
@@ -60,7 +74,8 @@ header {
         list-style-type: none;
 
         li {
-            padding-left: 5px;
+            padding-left: 10px;
+            padding-right: 15px;
         }
     }
 
@@ -70,10 +85,16 @@ header {
 
     p {
         font-weight: bold;
+        padding-left: 15px;
     }
 
     i {
         padding-right: 10px;
+    }
+
+    .little-icon {
+        font-size: 10px;
+        padding-left: 5px;
     }
 }
 
