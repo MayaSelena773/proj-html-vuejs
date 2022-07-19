@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './style/vars.scss';
 
 .brands-section {
     text-align: center;
@@ -57,7 +58,7 @@ export default {
         }
     }
     .back-shadow {
-        box-shadow: inset 0 -4px 3px rgb(255, 231, 216);
+        box-shadow: inset 0 -4px 3px $brand_secondary_color;
         border-radius: 10px;
         margin: 1rem 7rem;
         height: 90px;
