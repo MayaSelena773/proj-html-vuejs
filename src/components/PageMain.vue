@@ -4,6 +4,7 @@
         <PageBusiness />
         <PageBrands />
         <PageConsultant />
+        <PageClients />
     </main>
 </template>
 
@@ -12,6 +13,7 @@ import PageJumbotron from './PageJumbotron.vue'
 import PageBusiness from './PageBusiness.vue'
 import PageBrands from './PageBrands.vue'
 import PageConsultant from './PageConsultant.vue'
+import PageClients from './PageClients.vue'
 
 export default {
     name:'PageMain',
@@ -19,7 +21,8 @@ export default {
         PageJumbotron,
         PageBusiness,
         PageBrands,
-        PageConsultant
+        PageConsultant,
+        PageClients
     }
 }
 </script>

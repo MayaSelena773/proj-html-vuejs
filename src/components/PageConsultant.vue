@@ -1,8 +1,9 @@
 <template>
 <!--Sezione consulenti-->
     <section class="section-consultant">
+        <!--Titolo-->
         <h3 class="med-title padd">Trusted by Leading Organisations</h3>
-
+        <!--Cards consulenti-->
         <div class="flex-cards">
             <div class="card">
                 <img src="../assets/img/case-studies-1.jpg" alt="case1" class="cons-img"> 
