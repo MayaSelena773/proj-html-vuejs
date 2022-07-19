@@ -49,7 +49,8 @@ a {
     background-color: $brand_primary_color;
     color: white;
     display: inline-block;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 6.5rem;
+    margin-top: 10px;
 }
 
 .large-title {
@@ -67,6 +68,20 @@ a {
 
 .gray-text {
     color: gray;
+}
+
+.med-title {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.med-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.padd-btn {
+    padding: 1rem 2rem;
 }
 
 
