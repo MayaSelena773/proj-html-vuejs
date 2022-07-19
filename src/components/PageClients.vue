@@ -1,7 +1,8 @@
 <template>
-<!--Sezione clienti-->
+<!--SEZIONE CLIENTI-->
     <section class="section-clients">
 
+        <!--Prima parte-->
         <!--testo-->
         <div class="flex">
             <div class="big-box padd-text">
@@ -13,6 +14,43 @@
             <div>
                 <img src="../assets/img/we-boost-our-clients.jpg" alt="clients" class="big-box little-rad">
             </div>
+        </div>
+
+        <!--Seconda parte-->
+        <div class="flex padd-section">
+            <div class="big-box padd-text">
+                <p class="large-text">We Build Relationships</p>
+                <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
+                <p class="large-text">Propietary Processes</p>
+                <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo. Integer consectetur.</p>
+            </div>
+
+            <div class="big-box">
+                <div class="flex">
+                    <span><i class="fa-solid fa-magnifying-glass-plus orange-icon"></i></span> 
+                    <span>
+                        <p class="med-text">Accountability</p>
+                        <p>Curabitur ac leo nunc vestibulum.</p>
+                    </span>
+                </div>
+
+                <div class="flex">
+                    <span><i class="fa-solid fa-folder-plus orange-icon"></i></span> 
+                    <span>
+                        <p class="med-text">Transparency</p>
+                        <p>Curabitur ac leo nunc vestibulum.</p>
+                    </span>
+                </div>
+
+                <div class="flex">
+                    <span><i class="fa-solid fa-square-poll-vertical orange-icon"></i></span> 
+                    <span>
+                        <p class="med-text">Investment</p>
+                        <p>Curabitur ac leo nunc vestibulum.</p>
+                    </span>
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -49,6 +87,18 @@ export default {
     }
     .little-rad {
         border-radius: 10px;
+    }
+    .padd-section {
+        padding: 6rem 0;
+    }
+    .orange-icon {
+        color: $brand_primary_color;
+        font-size: 30px;
+        border: 3px solid $brand_primary_color;
+        border-radius: 10px;
+        padding: 15px;
+        margin-left: 50px;
+        margin-right: 15px;
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-<!--Sezione consulenti-->
+<!--SEZIONE CONSULENTI-->
     <section class="section-consultant">
         <!--Titolo-->
         <h3 class="med-title padd">Trusted by Leading Organisations</h3>
