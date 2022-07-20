@@ -113,9 +113,6 @@ export default {
     margin-top: 3rem;
     padding-top: 6rem;
 
-    .padd-text {
-        padding-right: 200px;
-    }
     .big-box {
         width: 600px;
 
@@ -163,6 +160,10 @@ export default {
 }
 .bg-white {
     background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
 
     .large-cons {
         width: 550px;
