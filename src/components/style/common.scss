@@ -24,6 +24,13 @@ body {
     align-items: center;
 }
 
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -86,6 +93,14 @@ ul {
 
 .padd-btn {
     padding: 1rem 2rem;
+}
+
+.m-b {
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
