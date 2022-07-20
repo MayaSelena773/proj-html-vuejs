@@ -16,11 +16,11 @@
             </div>
             <div class="card-resource">
                 <img src="../assets/img/blog-posts-5-200x133.jpg" alt="blog5" class="blog-img"> 
-                <p class="large-text">How to Write Stunning Blog Post Titles</p>
+                <p class="large-text padd">How to Write Stunning Blog Post Titles</p>
             </div>
             <div class="card-resource">
                 <img src="../assets/img/blog-posts-4-200x133.jpg" alt="blog4" class="blog-img"> 
-                <p class="large-text">Tecniques to Reduce Facebook Ads Spend</p>
+                <p class="large-text padd">Tecniques to Reduce Facebook Ads Spend</p>
             </div>
         </div>
     </section>
@@ -47,11 +47,10 @@ export default {
         justify-content: space-between;
     }
     .resource-box {
-        //width: 50%;
+        width: 50%;
     } 
     .padd-right {
         padding: 6rem 0;
-        padding-right: 500px;
     }
     .self {
         width: 300px;

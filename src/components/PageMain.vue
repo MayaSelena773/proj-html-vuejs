@@ -6,6 +6,7 @@
         <PageConsultant />
         <PageClients />
         <PageResources />
+        <PageTeam />
     </main>
 </template>
 
@@ -16,6 +17,7 @@ import PageBrands from './PageBrands.vue'
 import PageConsultant from './PageConsultant.vue'
 import PageClients from './PageClients.vue'
 import PageResources from './PageResources.vue'
+import PageTeam from './PageTeam.vue'
 
 export default {
     name:'PageMain',
@@ -25,7 +27,8 @@ export default {
         PageBrands,
         PageConsultant,
         PageClients,
-        PageResources
+        PageResources,
+        PageTeam
     }
 }
 </script>
